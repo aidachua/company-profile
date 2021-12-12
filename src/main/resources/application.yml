@@ -1,0 +1,19 @@
+###############################################################################
+# Default configuration
+###############################################################################
+spring:
+  application:
+    name: company-profile
+
+server:
+  port: 1234
+  servlet:
+    context-path: /v1
+
+xml-location: "/home/aida.chua/git/company-profile/src/main/resources/xml-api/"
+
+logging:
+  config: classpath:logback-spring.xml
+  level:
+    com.martin: DEBUG
+    org.springframework.security: INFO
